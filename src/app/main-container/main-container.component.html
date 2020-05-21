@@ -1,0 +1,7 @@
+<div class="main">
+    <p>main-container works!</p>
+<button type="button" (click)="resetAll()" >Reset</button>
+<app-clock (hourPassed)="reportHourPassed($event)" [reset]="resetAllCountrs"></app-clock>
+<app-hour-reporter [reset]="resetAllCountrs" [hoursNumber]="hoursNumber"></app-hour-reporter>
+<app-click-counter [reset]="resetAllCountrs"></app-click-counter>
+</div>
